@@ -1,0 +1,16 @@
+{
+	"manifest_version" : 3,
+	"name": "Canvas Fixes",
+	"version":"1.0",
+	"description": "Removes the annoying sidebar from canvas when the viewport width is (1920/2)px.",
+	
+		"content_scripts": [
+			{
+				"matches": [
+					"https://canvas.calpoly.edu/*"
+				],
+				"css": ["canvas.css"]
+			}
+		]
+
+}
